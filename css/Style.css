@@ -1,0 +1,119 @@
+*{
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box}
+body{
+	background: #159957;  /* fallback for old browsers */  /* Chrome 10-25, Safari 5.1-6 */
+background: -webkit-gradient(linear, left top, right top, from(#155799), to(#159957));
+background: linear-gradient(to right, #155799, #159957); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+.titulo {
+	margin-top: 60px;
+}
+.titulo {
+	margin-top: 10px;
+	font-size: 1.2em;
+	font-weight: bold;
+	}
+header, .main,  footer{
+	width: 60%;
+	padding: 50px;
+	margin: auto;
+	background: #f4f4f4;
+	font-family: 'Roboto', sans-serif;
+	-webkit-box-shadow: 2px 3px 5px;
+	box-shadow:2px 3px 5px ;
+}
+header{
+	padding-top: 50px;
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.main, footer{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1.2em;
+	text-align: center;
+
+}
+.main{
+	margin: auto;
+}
+form{
+	width: 100%;
+	margin: 20px 0;
+	padding: 20px;
+	background: #fff;
+	overflow: hidden;
+	-webkit-box-shadow: 0 0 3px grey;
+	box-shadow: 0 0 3px grey;
+	border-top: 4px solid #536DFE;
+	border-top-width: 5px;
+	border-top-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+}
+form input[type="text"],
+form input[type="email"],
+form input[type="password"],
+form textarea {
+	border: 1px solid #536DFE;
+	border-radius: 2px;
+	padding: 16px;
+	width: 100%;
+	display: block;
+	margin-bottom: 20px;
+	font-size: 1em;
+	color: #141938;
+}
+form input[type="text"]:focus,
+form input[type="email"]:focus.
+form input[type="password"]:focus,
+form textarea:focus {
+	border: 1px solid #536DFE;
+	padding: 15px;
+	
+}
+
+form .alert{
+	padding: 1em;
+	color: #fff;
+	border-radius: 3px;
+	margin-bottom: 20px;
+	font-size: 14px;
+}
+form .alert.error{
+	background: #F2DEDE;
+	border: 1px solid #a94442;
+	color: #a94442;
+}
+form .alert.success{
+	background: #4caf50;
+}
+form textarea{
+	
+}
+form  input[type="submit"]{
+	padding: 12px;
+	background: #c75a39;
+	font-size: 0.8em;
+	color: #fff;
+	border-radius: 5px;
+	border: none;
+	float: right;
+	cursor: pointer;
+ 	-webkit-transition: 0.7s;
+ 	-webkit-transition: 0.4s;
+ 	transition: 0.4s;
+}
+form  input[type="submit"]:hover{
+	
+	background: #ff3b00;
+	
+}
+footer{
+	display: block;
+	margin-top: 20px;
+	bottom: 0;
+}
