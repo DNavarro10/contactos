@@ -24,6 +24,25 @@
 		} else {
 		 	$errores .= 'Por favor ingres el correo';
 		}
+		
+		if(!empty($mensaje)){
+			$mensaje = htmlspecialchars($mensaje);
+			$mensaje = trim($mensaje);
+			$mensaje = stripslashes($mensaje);
+		} else{
+			$errores .= 'Por favor ingresa un mensaje';
+		}
+		
+		if(!$errores){
+			$enviar_a = 'luis_d_100@hotmail.com';
+			$asunto = 'Correo enviado desde Formulario de contacto';
+			$mensaje_preparado = "De: $nombre \n)";
+			$mensaje_preparado .= "Correo: $correo \n";
+			$mensaje_preparado .= "Mensaje " . $mensaje;
+			
+			mail($enviar_a, $asunto, $mensaje_preparado);
+			$enviado = 'true';
+		}
 	}
 
 require 'index.view.php';
