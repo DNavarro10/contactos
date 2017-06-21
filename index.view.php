@@ -28,8 +28,8 @@
 				<textarea class="form-control" name="mensaje" id="txt-area" cols="25" rows="10"><?php if(!$enviado && isset($mensaje)) echo $mensaje ?></textarea>
 							<!-- validado php -->
 				<?php
-				
-				if(!empty($_errores)): ?>
+	
+				if(!empty($errores)): ?>
 				
 				<div class="alert error">
 					<?php echo $errores; ?>

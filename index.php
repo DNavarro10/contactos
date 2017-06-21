@@ -11,7 +11,7 @@
 		
 		if(!empty($nombre)){
 			$nombre = trim($nombre); /* Evitar espacios*/
-			$nombre = filter_var($nombre , FILTER_SANITIZE_STRING); /* permine elimnar parametros que no sirven*/
+			$nombre = filter_var($nombre, FILTER_SANITIZE_STRING); /* permine elimnar parametros que no sirven*/
 		} else{
 			$errores .= 'Por favor ingresar un nombre <br />';
 		}
@@ -22,7 +22,7 @@
 				$errores .= 'Por favor ingresa un correo valido <br />';
 			}
 		} else {
-		 	$errores .= 'Por favor ingres el correo';
+		 	$errores .= 'Por favor ingres el correo <br />';
 		}
 		
 		if(!empty($mensaje)){
@@ -46,3 +46,5 @@
 	}
 
 require 'index.view.php';
+
+?>
